@@ -3,9 +3,13 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* This function generates a random number
+ * Thne it indicate wheather or not the number is 
+ * Positive, Negative or Zero
+ **/
 int main(void)
 {
+	/* code goes in here */
 	int n;
 
 	srand(time(0));
