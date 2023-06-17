@@ -1,22 +1,14 @@
-/**
-*0-positive_or_negative
-*
-*This program randomly generate numbers and 
-*determine wheather they are positive zero or negative 
-*/
+/* 0-positive_or_negative */
 
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
-*Main
-*
-*The main is the entry point of the program,
-*It generates random numbers and determine if they are 
-*positive, zero or negative
-*Returns 0 on successful execution
-*/
+ *Main - checks if a number is positive zero or negative
+ *
+ *Return: 0 on successful execution
+ */
 
 int main(void)
 {
