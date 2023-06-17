@@ -5,11 +5,13 @@
 #include <stdio.h>
 
 /**
- *Main - checks if a number is positive zero or negative
+ *Main = -Enry point
+ *checks if a number is positive zero or negative
  *
  *Return: 0 on successful execution
  */
 
+/*main function start the program */
 int main(void)
 {
 	int n;
