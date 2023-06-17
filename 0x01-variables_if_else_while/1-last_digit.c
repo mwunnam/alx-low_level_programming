@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main = -Entry point for program
+ * Main= - Entry point for program
  *It takes last number and check it i s
  *greater than 5 equal to 0 or less than
  *
@@ -11,7 +11,7 @@
  *
  */
 
-/* Main function starts the program Returs zeor */
+/*function main starts the program Returs zeor */
 int main(void)
 {
 	int n;
