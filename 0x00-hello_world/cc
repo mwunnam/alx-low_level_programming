@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Name of file: " Name
+read -p "Name of output file: " Outputname
+gcc ${Name} -o ${Outputname}
