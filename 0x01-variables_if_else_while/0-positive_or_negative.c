@@ -1,21 +1,17 @@
-/* 0-positive_or_negative */
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
- *Main = -Enry point
- *checks if a number is positive zero or negative
+ * main - Entry point
  *
- *Return: 0 on successful execution
+ * Return: 0 (success)
  */
 
-/*main function start the program */
 int main(void)
 {
 	int n;
-	/* Generating the random number */
+
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
@@ -26,5 +22,6 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is negative\n", n);
+
 	return (0);
 }
