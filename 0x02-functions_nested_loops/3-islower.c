@@ -1,12 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: 0 (success)
+* _islower - Entry point
+*@c: character to be inputed
+* Return: 1 if true else 0
 *
 */
-int main(void)
+
+int _islower(int c)
 {
-return (0);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
