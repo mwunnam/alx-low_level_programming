@@ -1,12 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* _isupper - Entry point
 *
-* Return: 0 (success)
+* @c: input to be evaluated
+*
+* Return: 0 if ture else 0
 *
 */
-int main(void)
+int _isupper(int c)
 {
+	if (((c <= 'A') || (c <= 'Z')))
+		return (1);
+	else
+		return (0);
 return (0);
 }
