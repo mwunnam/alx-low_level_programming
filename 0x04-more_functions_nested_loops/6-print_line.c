@@ -1,12 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* print_line - Entry point
+*
+* @n: number the _ should be printed
 *
 * Return: 0 (success)
 *
 */
-int main(void)
+void print_line(int n)
 {
-return (0);
+	int i;
+
+	if (n <= 0)
+		_putchar('\n');
+
+	else
+		for (i = 0; i <= n; i++)
+		_putchar('_');
+	_putchar('\n');
 }
