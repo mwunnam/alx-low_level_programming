@@ -1,12 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* mul - Entry point
+*
+* @a: input
+* @b: input
 *
 * Return: 0 (success)
 *
 */
-int main(void)
+int mul(int a, int b)
 {
-return (0);
+	int result;
+
+	result = a * b;
+	return (result);
 }
