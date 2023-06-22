@@ -1,12 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* _isalpha - Entry point
 *
-* Return: 0 (success)
+* @c: is the input to be checked
+*
+* Return: 1 if ture else 0
 *
 */
-int main(void)
+int _isalpha(int c)
 {
+	if (((c >= 'a' && c <= 'z') ||( c >= 'A' && c <= 'Z')))
+		return (1);
+	else
+		return (0);
 return (0);
 }
