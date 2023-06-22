@@ -1,12 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* _isdigit - Entry point
 *
-* Return: 0 (success)
+* @c: input which will be evaluated
+*
+* Return: 1 if true else 0
 *
 */
-int main(void)
+int _isdigit(int c)
 {
-return (0);
+	if (((c >= 0) || (c <= 9)))
+		return (1);
+	else
+		return (0);
 }
