@@ -1,12 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* print_diagonal - Entry point
+*
+* @n: number of n to be printed
 *
 * Return: 0 (success)
 *
 */
-int main(void)
+void print_diagonal(int n)
 {
-return (0);
+	int i;
+	int k;
+
+	if (n <= 0)
+		_putchar('\n');
+
+
+	for (i = 0; i < n; i++)
+	{
+		for (k = 0; k < i; k++)
+			_putchar(' ');
+
+	_putchar('\\');
+	_putchar('\n');
+	}
+	_putchar('\n');
 }
