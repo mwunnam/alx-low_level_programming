@@ -1,12 +1,30 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* print_square - Entry point
+*
+* @size: input for the number of the square
 *
 * Return: 0 (success)
 *
 */
-int main(void)
+void print_square(int size)
 {
-return (0);
+	int i;
+
+	int j;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+		for (i = 1; i <= size; i++)
+		{
+			for (j = 0; j <= size; j++)
+			{
+				_putchar('#');
+			}
+		_putchar('\n');
+		}
 }
