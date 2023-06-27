@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * swap_int(int *a, int *b) = Entry point
+ * swap_int - Entry point
  *
  * @a: is the first parameter
  * @b: is the second parameter
