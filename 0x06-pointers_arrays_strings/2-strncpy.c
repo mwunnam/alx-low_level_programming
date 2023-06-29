@@ -2,10 +2,30 @@
 #include <stdio.h>
 
 /**
- * function_name - 
+ * _strncpy - copy a string
+ * @dest: input parameter
+ * @src: input parameter
+ * @n: input value 
  *
- * @: the parameter to be inputed
  *
- * Return: 0 Always
+ * Return: dest
  */
 
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i;
+
+	i = 0;
+
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
+}
