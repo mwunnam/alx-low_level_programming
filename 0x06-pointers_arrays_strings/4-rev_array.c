@@ -2,10 +2,21 @@
 #include <stdio.h>
 
 /**
- * function_name - 
+ * reverse_array - reverse array of integers
+ * @a: array
+ * @n: number of elements of array
  *
- * @: the parameter to be inputed
- *
- * Return: 0 Always
+ * Return: void
  */
+void reverse_array(int *a, int n)
+{
+	int i;
+	int k;
 
+	for (i = 0; i < n--; i++)
+	{
+		k = a[i];
+		a[i] = a[n];
+		a[n] = k;
+	}
+}
