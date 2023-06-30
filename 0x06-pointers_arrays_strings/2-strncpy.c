@@ -3,6 +3,7 @@
 
 /**
  * _strncpy - copy a string
+ *
  * @dest: input parameter
  * @src: input parameter
  * @n: input value 
