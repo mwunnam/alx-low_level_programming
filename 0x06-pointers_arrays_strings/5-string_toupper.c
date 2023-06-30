@@ -1,11 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-
-/**
- * function_name - 
+/*
+ * string_toupper - change all lowercase to uppercase
+ * @n: pointer
  *
- * @: the parameter to be inputed
- *
- * Return: 0 Always
+ * Return: n
  */
+char *string_toupper(char *n)
+{
+	int i;
+
+	i = 0;
+	while (n[i] != '\0')
+	{
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
+		i++;
+	}
+	return (n);
+}
 
