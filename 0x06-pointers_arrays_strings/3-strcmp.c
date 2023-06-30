@@ -7,7 +7,7 @@
  * @s1: input parameter
  * @s2: input parameter
  *
- * Return: s[i] and s2[i]
+ * Return: s[i] - s2[i]
  */
 int _strcmp(char *s1, char *s2)
 {
