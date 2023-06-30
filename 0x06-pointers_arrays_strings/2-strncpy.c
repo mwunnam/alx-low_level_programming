@@ -6,7 +6,7 @@
  *
  * @dest: input parameter
  * @src: input parameter
- * @n: input value 
+ * @n: input value
  *
  *
  * Return: dest
