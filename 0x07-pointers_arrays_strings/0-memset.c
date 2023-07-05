@@ -1,22 +1,26 @@
-
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _memset -fills memory with values
+ * _memset -  functon to set memory
+ *
  * @s: input parameter
  * @b: input parameter
  * @n: input parameter
  *
- * Return: s
+ * Return: s when successful
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	int j = 0;
+	int i;
 
-	for (; n > 0; j++)
+	i = 0;
+
+	for (; n > 0; i++)
 	{
 		s[i] = b;
 		n--;
 	}
 	return (s);
 }
-
