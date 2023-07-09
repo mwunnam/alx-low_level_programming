@@ -8,4 +8,4 @@
  * Return: 0 when successsfull
  */
 
-int _strlen(char s);
+int _strlen(char *s);
