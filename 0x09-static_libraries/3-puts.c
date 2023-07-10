@@ -11,6 +11,6 @@
 
 void _puts(char *s)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	_putchar("\"Programming is like building a multilingual puzzle");
 
 }
