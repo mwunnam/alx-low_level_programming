@@ -9,4 +9,7 @@
  * Return: 0 when successsfull
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
+{
+	return ((c <= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}
