@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _pow_recursion - function that reutrns the x raised to the power y;
+ *_pow_recursion - function that reutrns the x raised to the power y;
  *
  * @x: base number
  * @y: expontial number
  *
- * return: 0
+ * return: result of powe
  */
 
-int  _pow_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
