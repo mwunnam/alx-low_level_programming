@@ -12,5 +12,6 @@
 void _puts(char *s)
 {
 	_putchar("\"Programming is like building a multilingual puzzle");
+	return (0);
 
 }
