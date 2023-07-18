@@ -10,8 +10,6 @@
 *
 *  @end: input parameter
 *
-*  @n: input of the natural number
-*
 *  Return: 0 Always
 *
 */
