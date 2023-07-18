@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion - function that get the square
-*                root of a given natural number
+*                root of a given natural number.
 *
 *  pre_sqrt_recursion_func - function that helps the _sqrt_recursion function
 *
@@ -16,7 +16,7 @@
 *
 */
 
-int  pre_sqrt_recursion_func(int n, int start, int end)
+int pre_sqrt_recursion_func(int n, int start, int end)
 {
 	int mid_num;
 	int square;
