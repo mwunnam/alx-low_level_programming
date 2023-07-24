@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	int result;
 	int numb2;
 
-	if (argc < 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 	numb2 = atoi(argv[2]);
 
 	result = numb1 * numb2;
+
 	printf("%d\n", result);
 	return (0);
 }
