@@ -3,7 +3,7 @@
 
 
 /**
-* _puts-recursion - Entry point
+* _puts_recursion - Entry point
 *
 * @s: string to be printed
 *
