@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* main - Wrapper function for prime number check
+* is_prime_number - Wrapper function for prime number check
 *
 * @n: Number to be evaluated
 *
@@ -11,10 +11,10 @@
 */
 int is_prime_number(int n)
 {
-	if (n <=1)
+	if (n <= 1)
 		return (0);
 	else
-		return (prime_Num_checker(n, n/2, 2));
+		return (prime_Num_checker(n, n / 2, 2));
 }
 
 
@@ -36,5 +36,5 @@ int prime_Num_checker(int n, int stop, int i)
 	if (i >= stop)
 		return (1);
 	else
-		return ( prime_Num_checker(n, n/2, i + 1));
+		return (prime_Num_checker(n, n / 2, i + 1));
 }
