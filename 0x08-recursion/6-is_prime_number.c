@@ -25,7 +25,7 @@ int is_prime_number(int n)
  * @stop: mid poin of n
  * @i: The divisor
  *
- * Return 1 if prime number and 0 if not prime number
+ * Return: 1 if prime number and 0 if not prime number
  */
 
 int prime_Num_checker(int n, int stop, int i)
