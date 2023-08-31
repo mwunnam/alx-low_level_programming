@@ -26,10 +26,12 @@ int is_palindrome(char *s)
 
 /**
  * palindrome_checker - checks for palidrome
- * 
+ *
  * @s: string to be checked
  * @left: index of the first character
  * @right: index of the last character
+ *
+ * Return: 0 Always.
  */
 
 
@@ -41,7 +43,7 @@ int palindrome_checker(char *s, int left, int right)
 	}
 
 	else if (s[left] == s[right])
-	{	
+	{
 		return (palindrome_checker(s, left + 1, right - 1));
 	}
 	else
