@@ -8,5 +8,7 @@ void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
+int is_palindrome(char *s);
+int palindrome_checker(char *s, int left, int right);
 
 #endif 
