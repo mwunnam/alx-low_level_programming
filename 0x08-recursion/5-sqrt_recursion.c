@@ -24,7 +24,7 @@ int square_root_checker(int n, int start, int end)
 		if (square == n)
 			return (mid);
 
-		else if(square < n)
+		else if (square < n)
 			return (square_root_checker(n,
 					mid + 1, end));
 
@@ -43,6 +43,7 @@ int square_root_checker(int n, int start, int end)
  *
  * Return: 0 
  */
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -52,5 +53,3 @@ int _sqrt_recursion(int n)
 
 	return (square_root_checker(n, 0, n));
 }
-
-
