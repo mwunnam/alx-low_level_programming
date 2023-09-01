@@ -41,7 +41,7 @@ int square_root_checker(int n, int start, int end)
  *
  * @n: Number to be evaluated
  *
- * Return: 0 
+ * Return: 0
  */
 
 int _sqrt_recursion(int n)
