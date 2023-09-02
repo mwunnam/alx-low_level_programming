@@ -10,7 +10,7 @@
 * Return: 0 (success)
 */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *scr)
 {
 	/* empty function */
 return (0);

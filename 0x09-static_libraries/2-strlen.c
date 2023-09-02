@@ -3,16 +3,15 @@
 
 
 /**
-* _islower - Entry point
+* _strlen - Entry point
 *
-* @c: input 
+* @s: Input
 *
 * Return: 0 (success)
-*
 */
-int _islower(int c)
-{
-	/* empty function */
 
+int _strlen(char *s)
+{
+	/* Empty function */
 return (0);
 }

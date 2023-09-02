@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 
+
 /**
-* _isupper - Entry point
+* _strchr - Entry point
 *
+* @s: Input
 * @c: Input
 *
 * Return: 0 (success)
 */
 
-int _isupper(int c)
+char *_strchr(char *s, char c)
 {
-	/* empty function */
+	/* Empty function */
 return (0);
 }

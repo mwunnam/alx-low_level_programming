@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 
+
 /**
-* _isupper - Entry point
+* _islower - Entry point
 *
 * @c: Input
-*
 * Return: 0 (success)
+*
 */
-
-int _isupper(int c)
+int _islower(int c)
 {
 	/* empty function */
+
 return (0);
 }

@@ -5,7 +5,7 @@
 * _memset - Entry point
 *
 * @s: input
-* @s: input
+* @b: input
 * @n: input
 * Return: 0 (success)
 */
