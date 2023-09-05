@@ -37,7 +37,7 @@ return (len);
 char *_strdup(char *str)
 {
 	char *pnewstr;
-	int i,lent;
+	int i, lent;
 
 	if (str == NULL)
 	{
