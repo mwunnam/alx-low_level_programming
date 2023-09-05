@@ -49,7 +49,9 @@ char *_strdup(char *str)
 
 	pnewstr = malloc(lent + 1 * sizeof(char));
 	if (pnewstr == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; i < lent; i++)
 	{
