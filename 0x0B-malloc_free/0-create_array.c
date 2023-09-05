@@ -1,11 +1,14 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 
 /**
-* main - Entry point
+* create_array - function that creates an array
 *
-* Return: 0 (success)
+* @size: size of the array
+* @c: character
+*
+* Return: arr (success)
 *
 */
 
