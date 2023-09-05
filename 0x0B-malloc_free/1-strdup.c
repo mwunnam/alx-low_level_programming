@@ -37,15 +37,14 @@ return (len);
 char *_strdup(char *str)
 {
 	char *pnewstr;
-	int i;
-	int lent;
-
-	lent = _strlen(str);
+	int i,lent;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	lent = _strlen(str);
 
 	pnewstr = malloc(lent + 1 * sizeof(char));
 	if (pnewstr == NULL)
