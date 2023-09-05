@@ -53,7 +53,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i < lent; i++)
+	for (i = 0; str[i]; i++)
 	{
 		pnewstr[i] = str[i];
 	}
