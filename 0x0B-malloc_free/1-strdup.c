@@ -38,22 +38,23 @@ char *_strdup(char *str)
 {
 	char *pnewstr;
 	int i;
+	int lent;
+
+	lent = _strlen(str);
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	pnewstr = malloc(_strlen(str + 1) * sizeof(char));
-
+	pnewstr = malloc(lent + 1 * sizeof(char));
 	if (pnewstr == NULL)
 		return (NULL);
 
-	while (str[i] != '\0')
+	for (i = 0; i < lent; i++)
 	{
 		pnewstr[i] = str[i];
-		i++;
 	}
-	pnewstr[i] = '\0';
+	pnewstr[lent] = '\0';
 return (pnewstr);
 }
