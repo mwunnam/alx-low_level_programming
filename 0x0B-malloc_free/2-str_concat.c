@@ -16,6 +16,10 @@ char *str_concat(char *s1, char *s2)
 	size_t len1, len2, i;
 	char *ptrStrn;
 
+	len1 = 0;
+	len2 = 0;
+	i = 0;
+
 	if (s1 == NULL)
 		s1 = "";
 
