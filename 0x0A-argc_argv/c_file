@@ -1,0 +1,17 @@
+#!/bin/bash
+read -p "File name: " Name
+touch $Name
+echo "#include <stdio.h>" >> $Name
+echo  "" >> $Name
+echo "/**" >> $Name
+echo "* main - Entry point" >> $Name
+echo "*" >> $Name
+echo "* Return: 0 (success)" >> $Name
+echo "*" >> $Name
+echo "*/" >> $Name
+echo " "
+echo "int main(void)" >> $Name
+echo "{" >> $Name
+echo "return (0);" >> $Name
+echo "}" >> $Name
+vim $Name
