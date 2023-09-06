@@ -1,48 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
 * alloc_grid - Entry point
 *
-* @width: the width fo the array
-* @height: the hight of the arry
+* @width: input of the row
+* @height: input of the col
 *
 * Return: 0 (success)
+*
 */
 
 int **alloc_grid(int width, int height)
 {
 	int **ptrArray;
-	int k, i, j;
+	int i, k;
 
-	if (width <= 0 || height <= 0)
+	if (width == 0 || height == 0)
 		return (NULL);
 
+	ptrArray = malloc(sizeof(int *) * height);
+	if (ptrArray == NULL)
+		return (NULL);
 
-	ptrArray = malloc(width * sizeof(int *));
-		if (ptrArray == NULL)
-			return (NULL);
-
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
-		ptrArray[i] = malloc(height * sizeof(int));
+		ptrArray[i] = malloc(sizeof(int) * width);
+
 		if (ptrArray[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
-			{
-				free(ptrArray[j]);
-			}
+			for (; i >= 0; i--)
+			free(ptrArray[i]);
+
 		free(ptrArray);
 		return (NULL);
 		}
 	}
 
-	for (j = 0; j < width; j++)
+	for (i = 0; i < height; i++)
 	{
-		for (k = 0; k < height; k++)
-		{
-		ptrArray[j][k] = 0;
-		}
+		for (k = 0; k < width; k++)
+			ptrArray[i][k] = 0;
 	}
-return (ptrArray);
+	return (ptrArray);
 }
