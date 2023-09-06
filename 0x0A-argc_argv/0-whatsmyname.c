@@ -4,6 +4,9 @@
 /**
 * main - Entry point
 *
+* @argc: argument count
+* @argv: argument string
+*
 * Return: 0 (success)
 *
 */
