@@ -37,11 +37,11 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	for (i = 0; i < width; i++)
+	for (j = 0; j < width; j++)
 	{
 		for (k = 0; k < height; k++)
 		{
-		ptrArray[i][k] = 0;
+		ptrArray[j][k] = 0;
 		}
 	}
 return (ptrArray);
