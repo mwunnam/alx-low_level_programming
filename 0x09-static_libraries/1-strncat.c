@@ -2,15 +2,16 @@
 #include "main.h"
 
 /**
-* _strcat - Entry point
+* _strncat - Entry point
 *
 * @dest: input
-* @scr: input
+* @src: input
+* @n: input
 *
 * Return: 0 (success)
 */
 
-char *_strcat(char *dest, char *scr)
+char *_strncat(char *dest, char *src, int n)
 {
 	/* empty function */
 return (0);
