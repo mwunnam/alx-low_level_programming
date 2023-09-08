@@ -20,29 +20,30 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len1 = 0;
 	len2 = 0;
-
+/** Treat NULL string as empty string */
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s1 = "";
 /** Get the lenght of s1 and s2 */
 	while (*s1 != '\0')
 		len1++;
 
 	while (*s2 != '\0')
 		len2++;
-
 /* Set n to len2 if n is greater than n */
 	if (n >= len2)
 		n = len2;
-
-	/** Allcote memory for the new string */
+/** Allcote memory for the new string */
 	ptr = malloc(sizeof(char) * (len1 + n + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	/** Copy s1 to prt */
+/** Copy s1 to prt */
 	for (i = 0; i < len1; i++)
 		ptr[i] = s1[i];
-
-	/** Concatenate the first n character from s2 */
+/** Concatenate the first n character from s2 */
 	for (j = 0; j < n; j++)
 		ptr[len1 + j] = s2[j];
 
