@@ -36,7 +36,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ptr = malloc(sizeof(char) * (len1 + n + 1));
 	if (ptr == NULL)
 	{
-		exit(98);
 		return (NULL);
 	}
 	/** Copy s1 to prt */
