@@ -24,12 +24,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		s1 = "";
+		s2 = "";
 /** Get the lenght of s1 and s2 */
-	while (*s1 != '\0')
+	while (s1[len1] != '\0')
 		len1++;
 
-	while (*s2 != '\0')
+	while (s2[len2] != '\0')
 		len2++;
 /* Set n to len2 if n is greater than n */
 	if (n >= len2)
