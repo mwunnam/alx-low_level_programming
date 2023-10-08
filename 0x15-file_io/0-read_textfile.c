@@ -22,7 +22,7 @@ size_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	ptr_file = fopen("filename", "r");
+	ptr_file = fopen(filename, "r");
 	if (ptr_file == NULL)
 		return (0);
 
