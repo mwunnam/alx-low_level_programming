@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include "main.h"
 
 /**
  * _strlen - Function that returns the lenght of a string
