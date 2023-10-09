@@ -16,8 +16,11 @@ int _strlen(char *str)
 	len = 0;
 
 	while (*str != '\0')
-		return (len);
-return (0);
+	{
+		len++;
+		str++;
+	}
+return (len);
 }
 
 /**
