@@ -17,8 +17,8 @@ int _strlen(char *str)
 
 	while (*str != '\0')
 	{
-		len++;
 		str++;
+		len++;
 	}
 return (len);
 }
@@ -37,24 +37,26 @@ int create_file(const char *filename, char *text_content)
 	size_t text_len;
 	ssize_t written;
 
-	text_len = _strlen(text_content);
-
 	if (filename == NULL)
 		return (-1);
 
+	if (text_content != NULL)
+		text_len = _strlen(text_content);
+
 	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (file == -1)
-		return (-1);
-
-	if (text_content != NULL)
 	{
-		written = write(file, text_content, text_len);
-		if (written == -1)
-		{
-			close(file);
-			return (-1);
-		}
+		close(file);
+		return (-1);
 	}
+
+	written = write(file, text_content, text_len);
+	if (written == -1)
+	{
+		close(file);
+		return (-1);
+	}
+
 close(file);
 return (1);
 }
