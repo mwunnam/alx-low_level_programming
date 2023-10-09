@@ -43,8 +43,8 @@ size_t read_textfile(const char *filename, size_t letters)
 
 	written = write(STDOUT_FILENO, buffer, read);
 	if (written < 0 || written < read)
-	{
-		free(buffer);
+		{
+			free(buffer);
 		fclose(ptr_file);
 		return (0);
 	}
