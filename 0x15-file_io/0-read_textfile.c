@@ -30,6 +30,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	byte_read = fread(buffer, 1, letters, ptr);
+	if (byte_read <= 0)
+	{
+		fclose(ptr);
+		return (0);
+	}
 
 	if (byte_read > 0)
 	{
