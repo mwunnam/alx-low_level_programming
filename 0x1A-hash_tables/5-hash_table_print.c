@@ -22,7 +22,6 @@ void hash_table_print(const hash_table_t *ht)
 		current_node = ht->array[index];
 		while (current_node != NULL)
 		{
-			current_node = ht->array[index];
 			if (!flag)
 				printf(", ");
 			else
