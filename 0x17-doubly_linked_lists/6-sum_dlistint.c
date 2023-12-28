@@ -18,11 +18,11 @@ int sum_dlistint(dlistint_t *head)
 	current = head;
 	sum = 0;
 
-	while (current->next != NULL)
+	while (current != NULL)
 	{
-		sum = sum + (int)current->n;
+		sum += current->n;
 		current = current->next;
 	}
 
-	return (sum + (int)current->n);
+	return (sum);
 }
