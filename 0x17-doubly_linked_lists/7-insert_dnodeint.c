@@ -1,71 +1,68 @@
 #include "lists.h"
 /**
- * count_len - Function the count the lent of a list
+ * count - Function the count the nodes in a list
  * @h: The head of the list
- * Return: count
+ * Return: count;
  **/
-unsigned int count_len(dlistint_t **h)
+int count(dlistint_t **h)
 {
 	dlistint_t *current;
-	unsigned int count;
+	int count;
 
 	count = 0;
-
 	current = *h;
 	while (current != NULL)
 	{
-		current = current->next;
 		count++;
+		current = current->next;
 	}
-
 	return (count);
 }
 /**
- * insert_dnodeint_at_index - Function that insert node at index
+ * insert_dnodeint_at_index - Function that insert node at a possition
  * @h: The head of the list
- * @idx: The index for insertion
- * @n: The value to be inserted
- * Return: new_node
+ * @idx: The index for the insertion
+ * @n: the data to be added to the new node;
+ * Return: address to the new node;
  **/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *current1, *current2, *new_node;
-	unsigned int count;
+	dlistint_t *current, *new_node;
+	unsigned int len, i;
 
-	if (*h == NULL)
+	if (h == NULL)
 		return (NULL);
-	count = 0;
-	current1 = *h;
-	count = count_len(h);
-	if (count < idx)
-		return (NULL);
+
+	len = count(h) - 1;
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
 	new_node->n = n;
-	current1 = *h;
-	if (idx == 0)
+	new_node->prev = NULL;
+	new_node->next = NULL;
+
+	if (idx > len)
 	{
-		add_dnodeint(h, n);
-		if (*h != NULL)
-			(*h)->prev = new_node;
-		*h = new_node;
+		free(new_node);
+		return (NULL);
 	}
-	else if (idx == count)
-		add_dnodeint_end(h, n);
+	else if (idx == 0)
+		new_node = add_dnodeint(h, n);
+	else if (len == idx)
+		new_node = add_dnodeint_end(h, n);
 	else
 	{
-		current2 = current1->next;
-		for (count = 1; count < idx; count++)
+		current = *h;
+		for (i = 0; i < idx && current != NULL; i++)
+			current = current->next;
+		if (current != NULL)
 		{
-			current1 = current1->next;
-			current2 = current1->next;
+			new_node->next = current->next;
+			new_node->prev = current;
+			if (current->next != NULL)
+				current->next->prev = new_node;
+			current->next = new_node;
 		}
-		new_node->prev = current1;
-		new_node->next = current2;
-		current1->next = new_node;
-		current2->prev = new_node;
 	}
 	return (new_node);
 }
-
