@@ -2,10 +2,8 @@
 CC := gcc
 SRC := main.c school.c
 
-# all targets depends o the school targe
-all: school
 
 # school target depends on the  object files
 # $(SRC) is the prerequisite for school to get the objects files
-all: $(SRC)
+all:
 	$(CC) $(SRC) -o school
