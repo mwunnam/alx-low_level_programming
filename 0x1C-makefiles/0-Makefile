@@ -1,0 +1,6 @@
+# Rule to biuld the executable named school
+# all is the default command if make is used without
+# any specific target
+
+all: main.c school.c
+	gcc main.c school.c -o school
