@@ -1,6 +1,6 @@
 # Variable declaration and initialiazation
-CC := gcc
-SRC := main.c school.c
+CC = gcc
+SRC = main.c school.c
 
 
 # school target depends on the  object files
