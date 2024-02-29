@@ -1,0 +1,9 @@
+CC = gcc
+SRC = main.c school.c
+# This means take values of SRC which are .c files
+# and change them to anything it name was to .o
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
