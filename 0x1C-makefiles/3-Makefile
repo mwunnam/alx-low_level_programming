@@ -1,0 +1,22 @@
+CC = gcc
+SRC = main.c school.c
+# This does not create a list of .o files but using
+# $(SRC:%.c=%.o) creats such
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Defines what clean will do
+clean:
+	$(RM) *~ $(OBJ)
+
+# Defines what oclean will do
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
