@@ -7,5 +7,5 @@ all: school
 
 # school target depends on the  object files
 # $(SRC) is the prerequisite for school to get the objects files
-school: $(SRC)
-	$(CC) $(SRC) - school
+all: $(SRC)
+	$(CC) $(SRC) -o school
