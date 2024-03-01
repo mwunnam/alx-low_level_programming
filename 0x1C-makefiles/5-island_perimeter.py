@@ -3,6 +3,7 @@
 5-island_parimeter
 """
 
+
 def island_perimeter(grid):
     """
     Calculate the parimeter of the island described in grid.
@@ -21,12 +22,12 @@ def island_perimeter(grid):
         for j in range(len(grid[0])):
             if grid[i][j] == 1:
                 if grid[i - 1][j] == 0:
-                    perimeter += 1 # for top
+                    perimeter += 1
                 if grid[i][j - 1] == 0:
-                    perimeter += 1 # for the left
+                    perimeter += 1
                 if grid[i][j+1] == 0:
-                    perimeter += 1 # for the right
+                    perimeter += 1
                 if grid[i + 1][j] == 0:
-                    perimeter += 1 # for the bottom
+                    perimeter += 1
 
     return perimeter
